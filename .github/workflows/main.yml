@@ -60,7 +60,7 @@ jobs:
         export DATABASE=employees
         export DBPWD=pw
         export APP_COLOR=blue
-        docker run -p 8080:8080  -e DBHOST=$DBHOST -e DBPORT=$DBPORT -e APP_COLOR=blue  -e DBUSER=$DBUSER -e DBPWD=$DBPWD $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
+        docker run -p 8080:8080 -e DBHOST=$DBHOST -e DBPORT=$DBPORT -e APP_COLOR=blue -e DBUSER=$DBUSER -e DBPWD=$DBPWD $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
         docker ps
         echo "Pause for 10 seconds to let container start"
         sleep 10
