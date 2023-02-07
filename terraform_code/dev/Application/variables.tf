@@ -1,7 +1,7 @@
 # Instance type
 variable "instance_type" {
   default = {
-    "env"    = "t2.micro"
+    "env" = "t2.micro"
 
   }
   description = "Type of the instance"
