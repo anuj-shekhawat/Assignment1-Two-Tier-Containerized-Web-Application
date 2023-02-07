@@ -1,7 +1,7 @@
 # Instance type
 variable "instance_type" {
   default = {
-    "environment"    = "t2.micro"
+    "env"    = "t2.micro"
 
   }
   description = "Type of the instance"
@@ -10,7 +10,7 @@ variable "instance_type" {
 
 # Variable to signal the current environment 
 variable "env" {
-  default     = "environment"
+  default     = "env"
   type        = string
   description = "Deployment Environment"
 }
