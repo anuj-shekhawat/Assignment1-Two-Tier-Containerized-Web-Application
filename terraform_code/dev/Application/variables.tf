@@ -1,4 +1,4 @@
-# Instance type
+# Instance type 1
 variable "instance_type" {
   default = {
     "env" = "t2.micro"
